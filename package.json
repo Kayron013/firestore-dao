@@ -1,0 +1,47 @@
+{
+  "name": "firestore-dao",
+  "version": "1.0.0",
+  "description": "Data Access Object Framework for Firestore",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "dev": "firebase emulators:start",
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "deploy": "npm run test && npm run build && np"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kayron013/firestore-dao.git"
+  },
+  "keywords": [
+    "firestore",
+    "dao"
+  ],
+  "author": "Angel Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kayron013/firestore-dao/issues"
+  },
+  "homepage": "https://github.com/Kayron013/firestore-dao#readme",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.6.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "firebase": "^8.9.1",
+    "typescript-json-serializer": "^3.4.4"
+  }
+}

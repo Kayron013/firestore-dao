@@ -1,0 +1,16 @@
+node_modules
+
+# Build
+/lib
+
+# IDE
+.vscode
+
+# Env
+.env
+
+# Logs
+*.log
+
+# Test Coverage
+coverage
